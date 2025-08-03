@@ -1,14 +1,14 @@
 // Part 1: Type Coercion
-console.log('5' + 7);        
-console.log(Boolean(0));     
-console.log('10' - '2');     
-console.log('5' == 5);       
-console.log('5' === 5);      
-console.log(Boolean(''));    
-console.log('5' + true);     
-console.log('5' * 2);        
-console.log(0 == false);     
-console.log(Boolean(NaN));  
+console.log('5' + 7);        // '57'
+console.log(Boolean(0));     // false
+console.log('10' - '2');     // 8
+console.log('5' == 5);       // true
+console.log('5' === 5);      // false
+console.log(Boolean(''));    // false
+console.log('5' + true);     // '5true'
+console.log('5' * 2);        // 10
+console.log(0 == false);     // true
+console.log(Boolean(NaN));   // false
 
 // Part 2: Conditional Checks
 let num = -3;
@@ -112,11 +112,15 @@ console.log("Includes 7?", hasSeven);
 
 const firstThree = numbers.slice(0, 3);
 console.log("First three:", firstThree);
-
 numbers.splice(numbers.length - 1, 1, 99);
 console.log("After splice:", numbers);
 
 const sorted = [...numbers].sort((a, b) => a - b);
+console.log("Sorted:", sorted);
+
+const joined = numbers.join(',');
+console.log("Joined:", joined);
+
 console.log("Sorted:", sorted);
 
 const joined = numbers.join(',');
