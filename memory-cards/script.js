@@ -9,8 +9,6 @@ const answerEl = document.getElementById('answer');
 const addCardBtn = document.getElementById('add-card');
 const clearBtn = document.getElementById('clear');
 const addContainer = document.getElementById('add-container');
-
-// your code goes here// your code goes here
 // your code goes here
 const cardsData = getCardsData();
 let currentActiveCard = 0;
